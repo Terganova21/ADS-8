@@ -10,6 +10,6 @@ int main() {
     train.addCage(false);
 
   std::cout << train.getLength() << std::endl;
-  std::cout << train.getCount() << std::endl;
+  std::cout << train.getOpCount() << std::endl;
   return 0;
 }
