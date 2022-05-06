@@ -24,6 +24,6 @@ Train() : first(nullptr), last(nullptr) { }
 void addCage(bool _light);
 int getLength();
 int getCount();
-~Train(); 
+~Train();
 };
 #endif  // INCLUDE_TRAIN_H_
