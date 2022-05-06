@@ -54,7 +54,7 @@ int Train::getLength() {
   return getLength();
 }
 
-int Train::getCount() {
+int Train::getOpCount() {
   return count;
 }
 
