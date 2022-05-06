@@ -35,7 +35,7 @@ int Train::getLength() {
   while (temp) {
     temp = temp -> next;
     ++steps_count;
-    ++countOp;
+    ++count;
     if (temp->light == current) {
       temp->light = !current;
       break;
@@ -44,7 +44,7 @@ int Train::getLength() {
 
   for (int i = 0; i < steps_count; ++i) {
     temp = temp->prev;
-    ++countOp;
+    ++count;
   }
 
   if (temp->light != current) {
@@ -54,8 +54,8 @@ int Train::getLength() {
   return getLength();
 }
 
-int Train::getOpCount() {
-  return countOp;
+int Train::getCount() {
+  return count;
 }
 
 Train::~Train() {
